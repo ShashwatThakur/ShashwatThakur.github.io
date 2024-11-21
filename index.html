@@ -1,1 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Why I Need Boba</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #fbc2eb, #a6c1ee);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            overflow: hidden;
+            color: #333;
+        }
+
+        .card {
+            background: #fff;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            width: 90%;
+            max-width: 800px;
+            max-height: 90vh;
+            padding: 20px;
+            overflow-y: auto;
+            text-align: center;
+            counter-reset: reason;
+        }
+
+        .card h1 {
+            font-size: 2rem;
+            margin: 0 0 20px;
+            color: #ff6f61;
+        }
+
+        .reasons {
+            margin-top: 10px;
+            text-align: left;
+            line-height: 1.6;
+        }
+
+        .reason {
+            margin-bottom: 15px;
+            padding: 10px;
+            background: #f9f9f9;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .reason::before {
+            content: counter(reason) ". ";
+            counter-increment: reason;
+            font-weight: bold;
+            color: #ff6f61;
+        }
+
+        @media (max-width: 600px) {
+            .card h1 {
+                font-size: 1.6rem;
+            }
+
+            .reason {
+                font-size: 0.9rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="card">
+        <h1>10 Reasons Why I Need Boba</h1>
+        <div class="reasons">
+            <div class="reason">I never had it before</div>
+            <div class="reason">You wouldn't want me to suffer from a boba deficiency, would you?</div>
+            <div class="reason">Sharing is caring, and I care about boba.</div>
+            <div class="reason">Boba is the key to happiness, and I could use some joy.</div>
+            <div class="reason">They say good things come to those who wait—I've waited, now I need boba.</div>
+            <div class="reason">Life is short, and boba makes it sweeter.</div>
+            <div class="reason">Giving me boba is a pearl-fect idea.</div>
+            <div class="reason">Hydration is important, and boba counts, right?</div>
+            <div class="reason">Giving boba is an act of kindness, and I believe in your kindness.</div>
+            <div class="reason">If not now, when? If not me, who? Just give me the boba.</div>
+        </div>
+    </div>
+
+</body>
+
+</html>
 
